@@ -20,7 +20,9 @@ sudo python /home/pi/sample.py
 ref. [Qui](https://www.dexterindustries.com/howto/run-a-program-on-your-raspberry-pi-at-startup/)
 
 Siccome lo script all'avvio verrà avviato come root e vlc di default non può essere avviato da quest'utente, bisogna cambiare l'user che chiama il processo:
+```
 sudo sed -i 's/geteuid/getppid/' /usr/bin/vlc
+```
 
 ref. [Qui](https://www.tecmint.com/run-vlc-media-player-as-root-in-linux/)
 
