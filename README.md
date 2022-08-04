@@ -26,9 +26,22 @@ sudo sed -i 's/geteuid/getppid/' /usr/bin/vlc
 
 ref. [Qui](https://www.tecmint.com/run-vlc-media-player-as-root-in-linux/)
 
+Alternativamente è possibile avviare vlc con il flag `-wrapper`
+
+altri flag utili sono `--play-and-exit` che serve per uscirer automaticamente dal processo vlc alla fine della riproduzione (altrimenti lo script resterebbe blloccato in attesa di un CTRL+C
+
+e il flag `--quiet` che disattiva tutti i log di warning ed error
+
+Quest'ultimo è opzionale in quanto si è preferito redirigere lo standard output ed error per non "sporcare" la console con i log (di qualunque genere) altrimenti visibili per pochi istanti prima e dopo la riproduzione del video
+
+per fare questo al lancio dei comandi è stata aggiunto `> /dev/null 2>&1` per redirigere appunto l'output della console
+
+ref. [Qui](https://stackoverflow.com/a/33989346)
+
 <br><br>
 
 ## Link utili
 
-VLC command-line --> https://wiki.videolan.org/VLC_command-line_help/
-Raspberry pi foundation official tutorial ultrasonic sensor --> https://projects.raspberrypi.org/en/projects/physical-computing/12
+- [VLC command-line](https://wiki.videolan.org/VLC_command-line_help/)
+- [Raspberry pi foundation official tutorial ultrasonic sensor](https://projects.raspberrypi.org/en/projects/physical-computing/12)
+- [Hide Console When Using os.system](https://thewebdev.info/2022/04/10/how-to-hide-the-console-when-using-os-system-or-subprocess-call-with-python/)
