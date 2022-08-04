@@ -40,6 +40,16 @@ ref. [Qui](https://stackoverflow.com/a/33989346)
 
 <br><br>
 
+## Cablaggio
+
+Per il cablaggio si è deciso di utilizzare un cavo ethernet per diversi fattori:
+- semplicità nel trovare cavi di lunga dimensione prefabbricati; (5m 3€ su amazon);
+- cavo schermato e di buona qualità (cat 6 ecc);
+- blocco sulla socket, in modo da prevenire sgancio per strattoni involontari del cavo ecc;
+- fino a 8 I/O con un solo cavo passante;
+
+<br><br>
+
 ## Link utili
 
 - [VLC command-line](https://wiki.videolan.org/VLC_command-line_help/)
