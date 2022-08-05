@@ -28,7 +28,7 @@ def main(argv=None):
             logging.info('\nDate: ' + curDT.strftime("%m/%d/%Y, %H:%M:%S") + ' - Cnt: ' + str(cnt) + '\n')
 
             os.system('vcgencmd display_power 1 > /dev/null 2>&1')
-            os.system('cvlc Naruto.mp4 --play-and-exit --quiet > /dev/null 2>&1')
+            os.system('cvlc video/Naruto.mp4 --play-and-exit --quiet > /dev/null 2>&1')
             os.system('vcgencmd display_power 0 > /dev/null 2>&1')
             sleep(2)
     except KeyboardInterrupt:
