@@ -14,7 +14,7 @@ sudo apt-get install vlc
 Per poter avviare correttamente lo script dopo il boot ed il login utente all'accensione del dispositivo, è necessario aggiungerlo al file .bashrc
 ```
 sudo nano /home/pi/.bashrc
-sudo python /home/pi/sample.py
+sudo python /home/pi/motion-projector-activator/main.py
 ```
 
 ref. [Qui](https://www.dexterindustries.com/howto/run-a-program-on-your-raspberry-pi-at-startup/)
