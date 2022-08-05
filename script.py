@@ -18,7 +18,7 @@ while True:
 
 #os.system('sudo killall vlc')
     os.system('vcgencmd display_power 1 > /dev/null 2>&1')
-    os.system('cvlc Naruto.mp4 --play-and-exit --quiet > /dev/null 2>&1')
+    os.system('cvlc video/Naruto.mp4 --play-and-exit --quiet > /dev/null 2>&1')
     #os.system('mplayer -vo xv Naruto.mp4')
     os.system('vcgencmd display_power 0 > /dev/null 2>&1')
     sleep(2)
