@@ -33,7 +33,7 @@ def main(argv=None):
             sleep(2)
     except KeyboardInterrupt:
         os.system('killall cvlc')
-        os.system('vcgencmd display_power 1')
+        os.system('vcgencmd display_power 1 > /dev/null 2>&1')
 
 if __name__ == '__main__':
     sys.exit(main())
